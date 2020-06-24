@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Head: Insert meta, link, title, style... -->
+<!-- START: HEAD -->
 <head>
 
 <!-- Title -->
 <title>Joanna Mei</title>
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="master.css" media="screen">
+<link rel="stylesheet" type="text/css" href="main.css" media="screen">
 
 <!-- Base -->
 <base href="https://www.joannamei.com/" target="_blank">
@@ -19,22 +19,77 @@
 <meta name="keywords" content="learning">
 <meta name="author" content="Joanna Mei">
 
+<!-- Fontawesome Kit -->
+<script src="https://kit.fontawesome.com/7626793e2f.js" crossorigin="anonymous"></script>
+
 </head>
+<!-- END: HEAD -->
 
-
-<!-- Body -->
+<!-- START: BODY -->
 <body>
 
-<h1>Joanna Mei</h1>
+<!-- Navbar -->
+<nav>
+  <ul>
+    <li>
+      <a href="#welcome-section">About</a>
+    </li>
+    <li>
+      <a href="#current-projects">Current Project</a>
+    </li>
+    <li>
+      <a href="#past-projects">Past Project</a>
+    </li>
+    <li>
+      <a href="#contact-section">Contact</a>
+    </li>
+  </ul>
+</nav>
 
-<h2>Building a Website</h2>
+<!-- Welcome Section -->
+<section id="welcome-section" class="welcome-section">
+  <h1>Joanna Mei</h1>
+  <p>Managing Projects</p>
+</section>
 
-<ul>
-  <li>Domain: Namecheap</li>
-  <li>Website host: GitHub Pages</li>
-  <li>File host: GitHub</li>
-  <li>Text Editor: Atom</li>
-</ul>
+<!-- Current Project: Front page project posts -->
+<article id="current-projects" class="current-projects">
+  <h2>Current Project: Building my Website</h2>
+
+  <ul>
+    <li>Web Address: <a href="#">https://www.joannamei.com/</a></li>
+    <li>Domain: Namecheap</li>
+    <li>Website host: GitHub Pages</li>
+    <li>File host: GitHub</li>
+    <li>Text Editor: Atom</li>
+    <li>File Storage: Cloudinary</li>
+  </ul>
+</article>
+
+<!-- Past Projects: Links to previous project posts -->
+<section id="past-projects" class="past-projects">
+  <h2>Previous Projects</h2>
+</section>
+
+<!-- Contact Section -->
+<section id="contact-section" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Online Presence</h2>
+  </div>
+  <div class="contact-links">
+    <a href="https://github.com/joannamei" target="_blank" class="contact-link"><i class="fab fa-github"></i> Github</a>
+    <a href="https://codepen.io/joannamei" target="_blank" class="contact-link"><i class="fab fa-codepen"></i> Codepen</a>
+    <a href="https://www.freecodecamp.org/joannamei" target="_blank" class="contact-link"><i class="fab fa-free-code-camp"></i> freeCodeCamp</a>
+    <a href="https://www.linkedin.com/in/joannamei/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&reg; JM Projects</p>
+</footer>
 
 </body>
+<!-- END: BODY -->
+
 </html>

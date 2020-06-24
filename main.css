@@ -1,0 +1,29 @@
+/* start: color palette */
+:root {
+  --main-white: #f7f7f7;
+  --main-black: #111111;
+}
+/* end: color palette */
+
+/* start: base */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* end: base */
+
+/* start: global properties */
+h1 {
+  color: var(--main-black);
+}
+/* end: global properties */
+
+/* start: navbar */
+/* end: navbar */
+
+/*start: footer*/
+footer {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
+/*end: footer*/
