@@ -19,6 +19,9 @@
 <meta name="keywords" content="learning">
 <meta name="author" content="Joanna Mei">
 
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
 <!-- Fontawesome Kit -->
 <script src="https://kit.fontawesome.com/7626793e2f.js" crossorigin="anonymous"></script>
 
@@ -32,49 +35,60 @@
 <nav>
   <ul>
     <li>
-      <a href="#welcome-section">About</a>
+      <a href="#welcome">About</a>
     </li>
     <li>
-      <a href="#current-projects">Current Project</a>
+      <a href="#current-projects">Present</a>
     </li>
     <li>
-      <a href="#past-projects">Past Project</a>
+      <a href="#past-projects">Past</a>
     </li>
     <li>
-      <a href="#contact-section">Contact</a>
+      <a href="#contact">Future</a>
     </li>
   </ul>
 </nav>
 
 <!-- Welcome Section -->
-<section id="welcome-section" class="welcome-section">
+<section id="welcome" class="welcome-section">
   <h1>Joanna Mei</h1>
   <p>Managing Projects</p>
 </section>
 
 <!-- Current Project: Front page project posts -->
-<article id="current-projects" class="current-projects">
-  <h2>Current Project: Building my Website</h2>
-
-  <ul>
-    <li>Web Address: <a href="#">https://www.joannamei.com/</a></li>
-    <li>Domain: Namecheap</li>
-    <li>Website host: GitHub Pages</li>
-    <li>File host: GitHub</li>
-    <li>Text Editor: Atom</li>
-    <li>File Storage: Cloudinary</li>
-  </ul>
-</article>
+<section id="current-projects" class="current-projects-section">
+  <div class="current-projects-header">
+    <h2>Current Projects</h2>
+    <p>What I'm doing</p>
+  </div>
+  <div id="current-project-tiles" class="current-project-tiles">
+    <div id="main-website" class="current-project-tile">
+      <h3>Building a Website</h3>
+      <ul>
+        <li>Web Address: <a href="#" class="current-project-link">https://www.joannamei.com/</a></li>
+        <li>Domain: Namecheap</li>
+        <li>Website host: GitHub Pages</li>
+        <li>File host: GitHub</li>
+        <li>Text Editor: Atom</li>
+        <li>File Storage: Cloudinary</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <!-- Past Projects: Links to previous project posts -->
-<section id="past-projects" class="past-projects">
-  <h2>Previous Projects</h2>
+<section id="past-projects" class="past-projects-section">
+  <div class="past-projects-header">
+    <h2>Past Projects</h2>
+    <p>What I've done</p>
+  </div>
+
 </section>
 
 <!-- Contact Section -->
-<section id="contact-section" class="contact-section">
-  <div class="contact-section-header">
-    <h2>Online Presence</h2>
+<section id="contact" class="contact-section">
+  <div class="contact-header">
+    <h2>Reach out</h2>
   </div>
   <div class="contact-links">
     <a href="https://github.com/joannamei" target="_blank" class="contact-link"><i class="fab fa-github"></i> Github</a>
