@@ -3,10 +3,10 @@
   --main-white: #f7f7f7;
   --main-black: #111111;
   --main-cream: #FEFEF6;
+  --main-beige: #EAE1DF;
   --main-olive: #3C4323;
-  --main-dkgreen: #283618;
-  --main-burgundy: #351431;
-  --main-rose: #F7F3F3
+  --main-dkgreen: #494F2B;
+  --main-rust: #5F3120;
 }
 /* end: color palette */
 
@@ -98,7 +98,7 @@ nav a:hover {
 
 /* start: welcome */
 .welcome-section {
-  background: linear-gradient(135deg, var(--main-white), var(--main-olive));
+  background: linear-gradient(135deg, var(--main-white), var(--main-beige));
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -112,49 +112,49 @@ nav a:hover {
 }
 /* end: welcome */
 
-/* start: current projects */
-.current-projects-section {
-  background-color: var(--main-burgundy);
+/* start: goals */
+.goals-section {
+  background-color: var(--main-olive);
+  color: var(--main-cream);
+  padding: 150px 3vw 15vh 3vw;
+}
+/* end: goals */
+
+/* start: projects */
+.projects-section {
+  background-color: var(--main-rust);
   padding: 150px 3vw 15vh 3vw;
 }
 
-.current-projects-header {
+.projects-header {
   margin: 0 auto 5vh auto;
-  color: var(--main-rose);
+  color: var(--main-beige);
 }
 
-.current-project-tile {
+.project-tile {
   background-color: var(--main-white);
   color: black;
   max-width: 400px;
   margin: auto;
 }
 
-.current-project-tile > ul {
+.project-tile > ul {
   list-style: none;
   text-align: left;
   padding: 1em;
   font-family: 'Inter', sans-serif;
 }
 
-.current-project-link {
+.project-link {
   text-decoration: none;
-  color: var(--main-burgundy);
+  color: var(--main-rust);
 }
-/* end: current projects */
-
-/* start: past projects */
-.past-projects-section {
-  background-color: var(--main-olive);
-  color: var(--main-cream);
-  padding: 150px 3vw 15vh 3vw;
-}
-/* end: past projects */
+/* end: projects */
 
 /* start: contact section */
 .contact-section {
-  background-color: var(--main-rose);
-  color: var(--main-burgundy);
+  background-color: var(--main-beige);
+  color: var(--main-rust);
   padding: 150px 0px;
 }
 .contact-links {
