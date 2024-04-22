@@ -1,12 +1,11 @@
 /* start: color palette */
 :root {
-  --main-white: #f7f7f7;
+  --main-white: #FFFFFF;
   --main-black: #111111;
-  --main-cream: #FEFEF6;
-  --main-beige: #EAE1DF;
-  --main-olive: #3C4323;
-  --main-dkgreen: #494F2B;
-  --main-rust: #5F3120;
+  --main-cream: #F2F1F0;
+  --main-beige: #DCD8CF;
+  --main-dkgreen: #3C4323;
+  --main-green: #494F2B;
 }
 /* end: color palette */
 
@@ -20,7 +19,7 @@
 /* start: global properties */
 body {
   text-align: center;
-  font-size: 100%;
+  font-size: 24px;
 }
 
 h1,
@@ -30,26 +29,26 @@ h3 {
 }
 
 h1 {
-  font-size: 4.5em;
-}
-
-h2 {
   font-size: 3em;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 h3 {
-  font-size: 1.875em;
+  font-size: 1.5em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: 'Inter', sans-serif;;
 }
 /* end: global properties */
 
 /* start: navbar */
 nav {
-  background-color: var(--main-dkgreen);
+  background-color: var(--main-green);
   position: fixed;
   width: 100%;
   top:0
@@ -58,20 +57,21 @@ nav {
 nav ul {
   list-style: none;
   margin: auto;
-  width: 800px;
+  width: 750px;
   overflow: auto;
+
 }
 
 nav li {
-  font-size: 1em;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
+  width: 250px;
+  height: 1.5em;
+  line-height: 1.5em;
   float: left;
 }
 
 nav a {
   font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
   text-decoration: none;
   color: var(--main-cream);
   display: block;
@@ -79,16 +79,19 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--main-olive);
+  background-color: var(--main-dkgreen);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 16px
+  }
   nav ul {
     width: 100%;
   }
   nav li {
-    line-height: 30px;
-    height: 30px;
+    line-height: 1.5em;
+    height: 1.5em;
     width: 100%;
     border-bottom: 1px solid var(--main-white);
     float: none;
@@ -107,75 +110,86 @@ nav a:hover {
 }
 
 .welcome-section > p {
-  color: var(--main-dkgreen);
+  color: var(--main-green);
   font-family: 'Roboto Slab', sans-serif;
 }
 /* end: welcome */
 
-/* start: goals */
-.goals-section {
-  background-color: var(--main-olive);
-  color: var(--main-cream);
-  padding: 150px 3vw 15vh 3vw;
-}
-/* end: goals */
 
 /* start: projects */
 .projects-section {
-  background-color: var(--main-rust);
-  padding: 150px 3vw 15vh 3vw;
+  background-color: var(--main-dkgreen);
+  padding: 15vh 3vw 15vh 3vw;
 }
 
 .projects-header {
+  color: var(--main-white);
   margin: 0 auto 5vh auto;
-  color: var(--main-beige);
+}
+
+.project-header{
+  margin: 0 auto 2.5vh auto;
 }
 
 .project-tile {
   background-color: var(--main-white);
-  color: black;
-  max-width: 400px;
+  color: var(--main-black);
+  max-width: 750px;
   margin: auto;
+  padding: 5vh;
 }
 
 .project-tile > ul {
   white-space: normal;
   list-style: none;
   text-align: left;
-  padding: 1em;
   font-family: 'Inter', sans-serif;
 }
 
 .project-link {
   text-decoration: none;
-  color: var(--main-rust);
+  color: var(--main-dkgreen);
 }
 /* end: projects */
 
 /* start: contact section */
 .contact-section {
   background-color: var(--main-beige);
-  color: var(--main-rust);
-  padding: 150px 0px;
+  padding: 15vh 0px;
 }
-.contact-links {
-  font-size: 2em;
+.contact-header {
+  color: var(--main-black);
+  margin: 0 auto 2.5vh auto;
+}
+.contact-section ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: 'Roboto Slab', sans-serif;
 }
-.contact-link {
+.contact-section li {
+  color: var(--main-black);
+  font-size: 1.5em;
+}
+
+.contact-section a {
   color: var(--main-black);
   text-decoration: none;
-  padding-top: .5em;
-  font-family: 'Roboto Slab', sans-serif;
+  display: block;
+  width: 100%;
+  transition: .2s background-color;
+}
+.contact-section a:hover {
+  background-color: var(--main-white);
 }
 /* end: contact section */
 
 /*start: footer*/
 footer {
-  background-color: var(--main-dkgreen);
+  background-color: var(--main-green);
   color: var(--main-cream);
+  font-weight: bold;
+  padding: 0.25em;
 }
 /*end: footer*/
