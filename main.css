@@ -81,22 +81,6 @@ nav a {
 nav a:hover {
   background-color: var(--main-dkgreen);
 }
-
-@media screen and (max-width: 750px) {
-  body {
-    font-size: 16px
-  }
-  nav ul {
-    width: 100%;
-  }
-  nav li {
-    line-height: 1.5em;
-    height: 1.5em;
-    width: 100%;
-    border-bottom: 1px solid var(--main-white);
-    float: none;
-  }
-}
 /* end: navbar */
 
 /* start: welcome */
@@ -184,6 +168,24 @@ nav a:hover {
   background-color: var(--main-white);
 }
 /* end: contact section */
+
+/* start: media queries */
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 16px
+  }
+  nav ul {
+    width: 100%;
+  }
+  nav li {
+    line-height: 1.5em;
+    height: 1.5em;
+    width: 100%;
+    border-bottom: 1px solid var(--main-white);
+    float: none;
+  }
+}
+/* end: media queries */
 
 /*start: footer*/
 footer {
