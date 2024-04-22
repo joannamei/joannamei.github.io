@@ -139,6 +139,7 @@ nav a:hover {
 }
 
 .project-tile > ul {
+  white-space: normal;
   list-style: none;
   text-align: left;
   padding: 1em;
